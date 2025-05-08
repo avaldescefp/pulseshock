@@ -1,0 +1,25 @@
+---
+import logoDesktop from "../assets/pulseshock-logo.png";
+import logoMobile from "../assets/pulseshock-logo-mobile.png";
+import "../styles/global.css";
+---
+
+<nav>
+  <a href="/">
+    <img
+      src={logoDesktop.src}
+      class="logo logo-desktop"
+      alt="Logo de PulseShock per a pantalles grans"
+    />
+    <img
+      src={logoMobile.src}
+      class="logo logo-mobile"
+      alt="Logo de PulseShock per a pantalles petites"
+    />
+  </a>
+  <ul>
+    <li><a href="#">PRODUCTES</a></li>
+    <li><a href="#">PROMOCIONS</a></li>
+    <li><a href="#">CONTACTE</a></li>
+  </ul>
+</nav>

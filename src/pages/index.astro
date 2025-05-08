@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import productsData from "../assets/data/products.json";
+import "../styles/global.css";
+---
+
+<Layout>
+  <Navigation />
+  <main>
+    <section class="hero-section"></section>
+    <h1>BEGUDES ENERGÈTIQUES PULSESHOCK</h1>
+    <ul class="llista-begudes">
+      {
+        productsData.drinks.map((drink) => (
+          <li class="beguda">
+            <a class="beguda" href={`${drink.url}`}>
+              <picture>
+                <source srcset={`${drink.image}.avif`} type="image/avif" />
+                <source srcset={`${drink.image}.webp`} type="image/webp" />
+                <img
+                  src={`${drink.image}.png`}
+                  alt={`Imatge de ${drink.name}`}
+                />
+              </picture>
+              <div class="beguda-info">
+                <span>{drink.name}</span>
+                <p>{drink.description}</p>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  background-color: black;
+  height: 8rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20rem;
+}
+
+nav a {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-section {
+  height: 600px;
+  background-color: yellowgreen;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 8rem 8rem;
+}
+
+.llista-begudes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem 15rem;
+}
+
+.beguda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.beguda a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.beguda img {
+  width: 8rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.beguda-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  font-family: "Orbitron", sans-serif;
+}
+
+.beguda:hover img {
+  transform: scale(1.1);
+  transform-origin: center bottom;
+}
+
+.beguda:hover .beguda-info {
+  visibility: visible;
+  opacity: 1;
+  max-height: 200px;
+}
+
+.logo {
+  height: 8rem;
+  width: auto;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    height: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  nav {
+    height: auto;
+    padding: 1rem;
+  }
+
+  nav img {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin: 4rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin: 4rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .beguda-info {
+    font-size: 0.9rem;
+    gap: 1rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .beguda-info {
+    visibility: visible;
+    opacity: 1;
+    max-height: none;
+  }
+}
