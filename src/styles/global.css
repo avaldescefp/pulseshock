@@ -96,14 +96,17 @@ video {
 }
 
 .productes {
-  padding: 5rem 2rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .llista-begudes-titol {
   font-family: "Orbitron", sans-serif;
   color: white;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .llista-begudes {
@@ -179,7 +182,7 @@ video {
 }
 
 .testimonis {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   background-color: #ffffff;
 }
 
