@@ -74,7 +74,7 @@ nav a {
   font-family: "Orbitron", sans-serif;
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #ff0055;
+  background-color: #224a94;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -84,7 +84,7 @@ nav a {
 }
 
 .cta-button:hover {
-  background-color: #e6004f;
+  background-color: #000000;
 }
 
 video {
@@ -96,7 +96,7 @@ video {
 }
 
 .productes {
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 
 .llista-begudes-titol {
@@ -244,7 +244,6 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 22vw;
   padding: 6rem 1rem;
   background-image: url("/images/parallax.jpg");
   background-attachment: fixed;
@@ -254,8 +253,18 @@ video {
   z-index: 1;
 }
 
-.columna {
-  flex: 0 0 auto;
+.columna1 {
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+
+.columna2 {
+  position: absolute;
+  top: 35%;
+  left: 71%;
+  transform: translate(-50%, -50%);
 }
 
 .contenidor {
@@ -264,7 +273,7 @@ video {
   align-items: center;
   justify-content: center;
   max-width: 400px;
-  padding: 2rem;
+  padding: 3rem;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   text-align: center;
@@ -275,12 +284,12 @@ video {
 
 .contenidor h2 {
   font-family: "Orbitron", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
 .mockup {
-  width: 100%;
+  width: 70%;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -430,33 +439,36 @@ footer {
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem;
   }
-}
 
-@media (max-width: 600px) {
-  .beguda-info {
-    font-size: 0.9rem;
-    gap: 1rem;
-    padding: 8px;
-  }
-}
-
-@media (max-width: 768px) {
   .beguda-info {
     visibility: visible;
     opacity: 1;
     max-height: none;
+    font-size: 0.9rem;
+    gap: 1rem;
+    padding: 8px;
   }
-}
 
-@media (max-width: 768px) {
   .descripcio-beguda {
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
   }
-}
 
-@media (max-width: 768px) {
+  .columna1,
+  .columna2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .mockup {
+    width: 100%;
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: center;
